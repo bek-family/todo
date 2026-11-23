@@ -1,0 +1,29 @@
+about = "Tasks are added from the field, and the caption counts those to do"
+
+[[step]]
+see = "No tasks yet"
+[[step]]
+shot = "empty"
+
+[[step]]
+tap = "Add a task"
+[[step]]
+type = "Buy milk"
+[[step]]
+key = "enter"
+[[step]]
+see = "One task to do"
+[[step]]
+type = "Call mom"
+[[step]]
+key = "enter"
+[[step]]
+type = "Read a book"
+[[step]]
+key = "enter"
+[[step]]
+see = "3 tasks to do"
+[[step]]
+see = "Read a book"
+[[step]]
+shot = "added"

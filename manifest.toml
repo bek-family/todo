@@ -1,0 +1,13 @@
+name = "todo"
+version = "0.1.0"
+needs = ["storage"]
+
+[title]
+en = "Todo"
+uz = "Vazifalar"
+ru = "Задачи"
+
+[about]
+en = "Tasks to do, ticked off as they are done"
+uz = "Qilinadigan ishlar, bajarilgani belgilanadi"
+ru = "Список дел, выполненное отмечается"

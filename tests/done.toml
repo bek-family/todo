@@ -1,0 +1,47 @@
+about = "A task tapped is done; the filters show what is to do and done; Clear done takes the done ones away, Undo puts them back"
+
+[[step]]
+tap = "Add a task"
+[[step]]
+type = "Buy milk"
+[[step]]
+key = "enter"
+[[step]]
+type = "Call mom"
+[[step]]
+key = "enter"
+[[step]]
+type = "Read a book"
+[[step]]
+key = "enter"
+
+[[step]]
+tap = "Call mom"
+[[step]]
+see = "2 tasks to do"
+[[step]]
+shot = "one-done"
+
+[[step]]
+tap = "Done"
+[[step]]
+see = "Call mom"
+[[step]]
+shot = "filter-done"
+[[step]]
+tap = "Clear done"
+[[step]]
+see = "Task deleted"
+[[step]]
+see = "Nothing done yet"
+[[step]]
+tap = "Undo"
+[[step]]
+see = "Call mom"
+
+[[step]]
+tap = "To do"
+[[step]]
+see = "Buy milk"
+[[step]]
+see = "Read a book"

@@ -1,0 +1,24 @@
+<x-page class="todo">
+  <x-title data-t="todo-title">Todo</x-title>
+  <x-search class="adder">
+    <x-icon>add</x-icon>
+    <input id="new" type="text" data-t-placeholder="todo-new" enterkeyhint="done">
+  </x-search>
+  <x-chips id="filters">
+    <x-chip data-filter="all" data-t="todo-all">All</x-chip>
+    <x-chip data-filter="active" data-t="todo-active">To do</x-chip>
+    <x-chip data-filter="done" data-t="todo-done">Done</x-chip>
+  </x-chips>
+  <x-caption id="count"></x-caption>
+  <x-section id="list"></x-section>
+  <x-empty id="empty">
+    <x-icon>checklist</x-icon>
+    <b id="empty-title"></b>
+    <span id="empty-hint"></span>
+  </x-empty>
+  <button class="text clear" id="clear" data-t="todo-clear">Clear done</button>
+  <x-snackbar id="notice" hidden>
+    <span id="notice-words"></span>
+    <button class="text" id="undo" data-t="todo-undo">Undo</button>
+  </x-snackbar>
+</x-page>

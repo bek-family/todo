@@ -1,0 +1,33 @@
+about = "A task swiped away is deleted and Undo puts it back (Uzbek, dark)"
+locale = "uz-UZ"
+dark = true
+
+[[step]]
+see = "Hozircha vazifa yoʻq"
+[[step]]
+tap = "Vazifa qoʻshing"
+[[step]]
+type = "Non olish"
+[[step]]
+key = "enter"
+[[step]]
+type = "Kitob oʻqish"
+[[step]]
+key = "enter"
+[[step]]
+see = "2 ta vazifa qoldi"
+
+[[step]]
+swipe_left = "Non olish"
+[[step]]
+see = "Vazifa oʻchirildi"
+[[step]]
+see = "1 ta vazifa qoldi"
+[[step]]
+shot = "deleted-uz-dark"
+[[step]]
+tap = "Qaytarish"
+[[step]]
+see = "Non olish"
+[[step]]
+see = "2 ta vazifa qoldi"

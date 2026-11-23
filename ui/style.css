@@ -1,0 +1,54 @@
+/* The todo list's own look, besides Bek UI's, in the system's tokens only. */
+
+/* Room under the list for the snackbar. */
+x-page.todo {
+    padding-bottom: 96px;
+}
+
+x-chips {
+    margin-bottom: 6px;
+}
+
+/* A task: its check, its words, and the cross that deletes it. */
+x-row.task {
+    min-height: 56px;
+    gap: 12px;
+}
+
+x-row.task x-icon.check {
+    font-family: icons;
+    color: var(--bek-on-card-muted);
+}
+
+x-row.task.done x-icon.check {
+    font-family: icons-filled;
+    color: var(--bek-accent);
+}
+
+x-row.task x-text b {
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+x-row.task.done x-text b {
+    color: var(--bek-on-card-muted);
+    text-decoration: line-through;
+}
+
+x-row.task x-icon.remove {
+    font-family: icons;
+    font-size: 22px;
+    color: var(--bek-on-card-muted);
+}
+
+/* Clear done, at the list's end. */
+button.clear {
+    align-self: center;
+}
+
+/* While there is nothing to say, nothing shows. */
+[hidden] {
+    display: none;
+}

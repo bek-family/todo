@@ -1,0 +1,25 @@
+about = "A task's cross deletes it (Russian)"
+locale = "ru-RU"
+
+[[step]]
+tap = "Новая задача"
+[[step]]
+type = "Купить хлеб"
+[[step]]
+key = "enter"
+[[step]]
+type = "Позвонить маме"
+[[step]]
+key = "enter"
+[[step]]
+see = "Осталось 2 задачи"
+[[step]]
+tap = "Удалить"
+[[step]]
+see = "Задача удалена"
+[[step]]
+see = "Осталась 1 задача"
+[[step]]
+see = "Позвонить маме"
+[[step]]
+shot = "ru"
