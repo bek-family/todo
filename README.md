@@ -12,6 +12,24 @@ to-do apps keep one.
   every task done. The snackbar's Undo puts back what went, for four
   seconds.
 
+<table>
+  <tr>
+    <td align="center"><img src="docs/screenshots/added.png" width="200" alt="Three tasks added"><br>Tasks added</td>
+    <td align="center"><img src="docs/screenshots/one-done.png" width="200" alt="One task ticked off"><br>One ticked off</td>
+    <td align="center"><img src="docs/screenshots/filter-done.png" width="200" alt="The Done filter"><br>The Done filter</td>
+    <td align="center"><img src="docs/screenshots/empty.png" width="200" alt="No tasks yet"><br>Nothing yet</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/screenshots/deleted-uz-dark.png" width="200" alt="A task swiped away, Uzbek, dark"><br>Swiped away (Uzbek, dark)</td>
+    <td align="center"><img src="docs/screenshots/ru.png" width="200" alt="A task deleted, Russian"><br>Deleted (Russian)</td>
+    <td align="center"><img src="docs/screenshots/phone-home.png" width="200" alt="The phone's home screen, Todo's icon on it"><br>On the phone's home</td>
+    <td align="center"><img src="docs/screenshots/phone-todo.png" width="200" alt="Todo open on the phone"><br>Open on the phone</td>
+  </tr>
+</table>
+
+The screenshots are its headless tests' (`bek-app test`) and the phone's
+own test's, in QEMU.
+
 The tasks are kept in the app's storage (`needs = ["storage"]`) under one
 key, as JSON. Its words are in English, Uzbek and Russian (`i18n/`), with
 each language's plurals; its look is Bek UI's, in the system's tokens, light
@@ -40,4 +58,5 @@ python3 tests/test_tasks.py              # the tasks' own rules
 | `src/words.py` | Its words in the phone's language, and the markup's put in |
 | `src/store.py` | The tasks as the storage keeps them |
 | `ui/` | Its page (`main.html`) and its look (`style.css`) |
+| `docs/screenshots/` | The screenshots above |
 | `tests/` | Headless tests (adding; ticking off, filters and Clear done; a swipe in Uzbek, dark; the cross in Russian) and the tasks' unit tests |
